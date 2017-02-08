@@ -1,0 +1,23 @@
+twin <- function(X, Y, n=100, num_iterations= 2000, learning_rate= 1e-1){
+  n= dim(x)[1]
+  p= dim(x)[2]+1
+  X1= cbind(rep(1,n), X)
+  alpha= ...
+  beta= ...
+  
+  for(it in 1:num_iterations){
+    Z= 1/(1+exp(-(X1 %*% alpha)))
+    Z1= cbind(rep(1,n), Z)
+    pr= 1/(1+exp(-(Z1 %*% beta)))
+    beta= ...
+    beta= beta + ...
+    for(k in 1:m){
+      da= ...
+      dalpha= ...
+      alpha[,k]= alpha[,k] + ...
+    }
+  }
+  
+  model= list(beta, alpha)
+  return(model)
+}
